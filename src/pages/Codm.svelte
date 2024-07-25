@@ -79,7 +79,7 @@ function answer(e){
     <button class="btn btn-primary" on:click={randomize}>Start</button> 
   </div>
   <div class="text-2xl inline text-white">Score: {score} | Maps Left: {mapPool.length}</div>
-  <img class="w-[100vh] object-contain" src="https://callofdutymaps.com/wp-content/uploads/isolated{mapUrl}.jpg" alt="br map">
+  <img class="w-[100vh] object-contain mb-2" src="https://callofdutymaps.com/wp-content/uploads/isolated{mapUrl}.jpg" alt="br map">
   <div class="grid grid-cols-2 gap-2">
     {#each choices as choice}
     <button class="btn btn-primary text-xl text-white" on:click={answer}>{choice}</button>
